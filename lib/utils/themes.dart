@@ -20,7 +20,7 @@ class ThemeManager extends ChangeNotifier {
     themeData = ThemeData.dark();
     getTypePreferences();
     getColorPreferences();
-    constructTheme(_mainColor, _isDark);
+    themeData = constructTheme(_mainColor, _isDark);
     notifyListeners();
   }
   ThemeData constructTheme(Color color, bool type) {
